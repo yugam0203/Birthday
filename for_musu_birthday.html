@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#170f25">
+<title>For Musu, with all my heart</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+:root{--night:#170f25;--plum:#38213d;--rose:#f0a6b7;--cream:#fff2e8;--gold:#e9c58c;--lav:#cbb6e5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:30px 20px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#56304f 0,#2b1937 42%,#170f25 78%)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #f0a6b733;border-radius:50%;width:min(80vw,650px);aspect-ratio:1;animation:rotate 55s linear infinite}
+.hero:after{width:min(100vw,820px);border-color:#e9c58c22;animation-direction:reverse}
+@keyframes rotate{to{transform:rotate(360deg)}}
+.sparkles{position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#f0a6b7 1px,transparent 1px);background-size:61px 61px,103px 103px;background-position:0 0,30px 22px;opacity:.24}
+.hero-inner{position:relative;z-index:1;max-width:700px}
+.overline{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+h1{font:500 clamp(4.2rem,14vw,8.5rem)/.88 'Playfair Display',serif;letter-spacing:-.06em;margin:27px 0}
+h1 em{display:block;color:var(--rose)}
+.hero p{max-width:490px;margin:25px auto;color:#f2dce7;line-height:1.85;font-size:16px}
+.btn{border:1px solid var(--gold);background:transparent;color:var(--cream);padding:14px 22px;border-radius:40px;cursor:pointer;transition:.25s}
+.btn:hover{background:var(--gold);color:var(--night);transform:translateY(-2px)}
+.down{position:absolute;bottom:24px;font-size:10px;letter-spacing:.2em;color:#d9b6c9}
+section{max-width:900px;margin:auto;padding:82px 22px}
+.kicker{text-align:center;color:var(--gold);font-size:10px;letter-spacing:.25em;text-transform:uppercase}
+h2{text-align:center;font:500 clamp(2.5rem,7vw,4.5rem)/1.05 'Playfair Display',serif;margin:15px 0 22px}
+.center{text-align:center;max-width:680px;margin:0 auto;color:#e7d6e2;line-height:1.9}
+.heartline{font-size:25px;text-align:center;color:var(--rose);margin:25px 0}
+.qualities{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:35px}
+.quality{padding:25px;background:#ffffff08;border:1px solid #f0a6b733;border-radius:18px}
+.quality .icon{font-size:24px}.quality h3{font:italic 25px 'Playfair Display';color:var(--rose);margin:12px 0 8px}.quality p{font-size:14px;line-height:1.75;color:#dfccda;margin:0}
+.letter{background:linear-gradient(145deg,#fff4eb,#f4dce3);color:#3b2638;border-radius:24px;padding:clamp(25px,6vw,55px);box-shadow:0 20px 70px #0003;position:relative}
+.letter:before{content:"♡";position:absolute;right:24px;top:10px;font-size:40px;color:#d78da4}
+.letter .salute{font:italic 29px 'Playfair Display';color:#a64d70}.letter p{font:16px/2 'DM Sans';margin:0 0 17px}.letter .sign{font:italic 30px 'Playfair Display';color:#a64d70;margin-top:25px}
+.reveal-area{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:32px}
+.reveal{border:1px solid #f0a6b755;background:#ffffff08;border-radius:16px;color:var(--cream);padding:22px;text-align:left;min-height:125px}
+.reveal b{display:block;color:var(--gold);font:italic 22px 'Playfair Display';margin-bottom:10px}
+.reveal span{display:none;color:#e8d8e4;line-height:1.7;font-size:14px}.reveal.open .hint{display:none}.reveal.open span{display:block}
+.dreams{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.dream{border-radius:18px;padding:22px 14px;background:#ffffff09;border:1px solid #e9c58c44;text-align:center}
+.dream .emoji{font-size:35px}.dream h3{font:italic 21px 'Playfair Display';color:var(--gold);margin:12px 0 6px}.dream p{font-size:13px;line-height:1.6;color:#dfccda;margin:0}
+.moment{background:var(--plum);border-radius:24px;padding:clamp(25px,5vw,45px);text-align:center;border:1px solid #f0a6b744}
+.moment .quote{font:italic clamp(1.8rem,5vw,3rem) 'Playfair Display';color:var(--rose);margin:20px 0}
+.final{text-align:center;padding:70px 22px 90px;background:radial-gradient(ellipse at center,#49253e,#170f25 70%)}
+.final h2{color:var(--rose)}.final p{max-width:570px;margin:0 auto 25px;line-height:1.9;color:#e7d6e2}
+footer{text-align:center;color:#a88ba2;font-size:11px;padding:22px}
+
+.childhood{max-width:760px;margin:0 auto;padding:70px 22px 30px;text-align:center}
+.childhood-frame{position:relative;max-width:440px;margin:28px auto 18px;padding:12px;border:1px solid #e9c58c88;border-radius:22px;background:linear-gradient(145deg,#fff2e8 0%,#e9c58c 100%);box-shadow:0 22px 65px #0005;transform:rotate(-1deg)}
+.childhood-frame img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:13px;background:#38213d}
+.childhood-caption{font:italic 22px 'Playfair Display',serif;color:var(--rose);margin:18px auto 0}
+.childhood-note{font-size:13px;line-height:1.7;color:#d9bfd0;max-width:500px;margin:0 auto}
+
+.float{position:fixed;bottom:-25px;z-index:8;pointer-events:none;animation:rise 4s ease-out forwards}
+@keyframes rise{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@media(max-width:620px){section{padding:65px 18px}.qualities,.reveal-area{grid-template-columns:1fr}.dreams{grid-template-columns:1fr}.dream{display:flex;align-items:center;text-align:left;gap:16px}.dream .emoji{min-width:45px}.hero{min-height:94svh}}
+</style></head><body>
+<header class="hero"><div class="sparkles"></div><div class="hero-inner"><div class="overline">A birthday note for my favourite girl</div><h1>Happy birthday,<em>Musu.</em></h1><p>Today isn't about a date or a party. It's about you—the beautiful, stubborn, kind-hearted, hardworking girl who deserves to be celebrated just for being exactly who she is.</p><button class="btn" onclick="document.querySelector('#you').scrollIntoView({behavior:'smooth'})">A little something for you ♡</button></div><div class="down">SCROLL GENTLY · THIS IS YOUR SPACE</div></header>
+
+<section class="childhood" aria-label="Musu as a little girl">
+  <div class="kicker">Before all the birthdays and big dreams</div>
+  <h2>Little Musu. ♡</h2>
+  <p class="childhood-note">A little glimpse of the girl who grew into someone so wonderfully, unmistakably you.</p>
+  <figure class="childhood-frame">
+    <!-- Replace "musu-childhood.jpg" with your photo filename.
+         Keep the photo in the same folder as this HTML file. -->
+    <img src="musu-childhood.jpg" alt="Musu as a little girl"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+    <div class="photo-placeholder" style="display:none;aspect-ratio:4/5;place-items:center;text-align:center;padding:25px;color:#fff2e8;background:#38213d;border-radius:13px">
+      <div><div style="font-size:42px;margin-bottom:12px">♡</div><strong>Your childhood photo goes here</strong><br><small style="opacity:.8">Add it as <code>musu-childhood.jpg</code><br>in the same folder as this page.</small></div>
+    </div>
+  </figure>
+  <p class="childhood-caption">Somehow, you were always going to be this lovely.</p>
+</section>
+
+<section id="you"><div class="kicker">If I could put what I see into words</div><h2>The things that make you, you.</h2><p class="center">Musu, I hope you know that I don't just love the big things about you. I notice the little things, too. The way you care. The way you keep going. The way you can be difficult one minute and have the purest heart the next. You are a whole person, not someone who has to be perfect to be wonderful.</p><div class="heartline">✦ ♡ ✦</div><div class="qualities">
+<article class="quality"><div class="icon">🌷</div><h3>Your heart</h3><p>You are kind and loving in a way that feels real. Even when you don't make a big show of it, your heart gives you away.</p></article>
+<article class="quality"><div class="icon">✨</div><h3>Your determination</h3><p>I see how hard you work. I hope you give yourself even half the credit I think you deserve. You should be proud of yourself, Musu.</p></article>
+<article class="quality"><div class="icon">😌</div><h3>Your little attitude</h3><p>Yes, sometimes you are difficult. And yes, sometimes you think you are being very clever. I wouldn't edit that personality out of you.</p></article>
+<article class="quality"><div class="icon">🎶</div><h3>Your many worlds</h3><p>You have music for your moods, movies for your evenings, books for your quiet moments, and a whole world of places and flavours waiting for you.</p></article>
+</div></section>
+<section><div class="kicker">A letter, from me to you</div><h2>My dearest Musu,</h2><div class="letter">
+<div class="salute">My Musu,</div>
+<p>Happy birthday, meri jaan.</p>
+<p>I wish you could borrow my eyes for a day—not because you need to change anything, but so you could see how much there is to admire in you. I see a girl who works hard, who keeps trying, whose heart is softer than she sometimes lets on, and whose presence makes life feel warmer.</p>
+<p>I love that you have a mind of your own. I love that you can be stubborn, that you try to outsmart me, and that you look personally offended when I figure out exactly what you are thinking. And Musu, your “why do you hate me, magical?” has become one of those little things that can make me smile just by remembering it.</p>
+<p>But beyond all the teasing, I hope you know this: I am so proud of the person you are. I want you to have a life that feels big and beautiful to you. I want you to see Europe, wander through little streets, find cafés and bookstores, try food you cannot pronounce, and then come home to the taste of Kashmiri food that no place in the world can replace.</p>
+<p>I hope you keep finding songs that feel like they were written for you, books that stay in your heart, movies that make you laugh, and days that remind you how lovely it is to be alive. I hope this year gives you reasons to celebrate yourself—not just what you achieve, but who you are while getting there.</p>
+<p>You don't have to be cheerful every day, strong every minute, or easy to understand all the time. You can just be Musu. That is already someone worth loving, cheering for, and celebrating.</p>
+<p>Happy birthday, my love. May the world be gentle with your heart and generous with your dreams. And whenever you need someone in your corner, you know where to find me.</p>
+<div class="sign">With all my love,<br>Yugam ♡</div></div></section>
+<section><div class="kicker">Little things I hope your year is full of</div><h2>Your kind of beautiful.</h2><p class="center">Not a list of things you should do. Just wishes for the things that make you light up.</p><div class="dreams">
+<div class="dream"><div class="emoji">🎧</div><div><h3>Perfect playlists</h3><p>Music for every mood, every drive, every version of you.</p></div></div>
+<div class="dream"><div class="emoji">📚</div><div><h3>One more chapter</h3><p>Stories that keep you up late and characters you miss when they're over.</p></div></div>
+<div class="dream"><div class="emoji">☕</div><div><h3>Stars Hollow days</h3><p>Cosy cafés, quick-witted conversations, and Gilmore Girls comfort.</p></div></div>
+<div class="dream"><div class="emoji">🇪🇺</div><div><h3>European skies</h3><p>New cities, pretty streets, slow mornings, and memories made your way.</p></div></div>
+<div class="dream"><div class="emoji">🍲</div><div><h3>A taste of home</h3><p>All the Kashmiri food your heart wants, whenever you want it.</p></div></div>
+<div class="dream"><div class="emoji">🍰</div><div><h3>Try the new thing</h3><p>New dishes, new places, and always room for one more bite.</p></div></div>
+</div></section>
+<section><div class="moment"><div class="kicker">One tiny reminder, just for you</div><div class="quote">“Why do you hate me, magical?”</div><p class="center">Musu, I could never hate you. I might call you out when you think you are hiding that little expression, and you might get all red and mad at me—but I hope you never stop being that wonderfully expressive, funny, impossible-to-fool person.</p><button class="btn" onclick="hearts()">Okay, fine. I am adorable. ♡</button></div></section>
+<section class="final"><div class="kicker">Today, the spotlight is yours</div><h2>Keep being Musu.</h2><p>Keep your kind heart. Keep your big dreams. Keep your opinions, your laughter, your clever little schemes, your love for stories and travel and food. Take up space. Be proud of yourself. Let yourself be celebrated.</p><p>There is nobody else quite like you, and that is your magic.</p><button class="btn" onclick="hearts()">A thousand birthday wishes for you ✨</button></section>
+<footer>Made for Musu, with love from Yugam. ♡</footer>
+<script>
+function hearts(){for(let i=0;i<36;i++){const e=document.createElement('span');e.className='float';e.textContent=['♡','✦','✿','♥'][i%4];e.style.left=Math.random()*100+'vw';e.style.color=['#f0a6b7','#e9c58c','#cbb6e5'][i%3];e.style.fontSize=(16+Math.random()*22)+'px';e.style.animationDelay=(Math.random()*.8)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),5000)}}
+</script></body></html>
