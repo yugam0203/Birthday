@@ -53,6 +53,28 @@ footer{text-align:center;color:#a88ba2;font-size:11px;padding:22px}
 .float{position:fixed;bottom:-25px;z-index:8;pointer-events:none;animation:rise 4s ease-out forwards}
 @keyframes rise{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
 @media(max-width:620px){section{padding:65px 18px}.qualities,.reveal-area{grid-template-columns:1fr}.dreams{grid-template-columns:1fr}.dream{display:flex;align-items:center;text-align:left;gap:16px}.dream .emoji{min-width:45px}.hero{min-height:94svh}}
+/* Floating birthday emojis */
+.birthday-float {
+  position: fixed;
+  z-index: 20;
+  bottom: -50px;
+  pointer-events: none;
+  animation: floatUp var(--duration, 8s) linear forwards;
+  filter: drop-shadow(0 3px 8px #0004);
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% { opacity: 0.95; }
+  85% { opacity: 0.85; }
+  100% {
+    transform: translate3d(var(--drift, 35px), -115vh, 0) rotate(28deg);
+    opacity: 0;
+  }
+}
 </style></head><body>
 <header class="hero"><div class="sparkles"></div><div class="hero-inner"><div class="overline">A birthday note for my favourite girl</div><h1>Happy birthday,<em>Musu.</em></h1><p>Today isn't about a date or a party. It's about you—the beautiful, stubborn, kind-hearted, hardworking girl who deserves to be celebrated just for being exactly who she is.</p><button class="btn" onclick="document.querySelector('#you').scrollIntoView({behavior:'smooth'})">A little something for you ♡</button></div><div class="down">SCROLL GENTLY · THIS IS YOUR SPACE</div></header>
 
@@ -81,13 +103,15 @@ footer{text-align:center;color:#a88ba2;font-size:11px;padding:22px}
 <section><div class="kicker">A letter, from me to you</div><h2>My dearest Musu,</h2><div class="letter">
 <div class="salute">My Musu,</div>
 <p>Happy birthday, meri jaan.</p>
-<p>I wish you could borrow my eyes for a day—not because you need to change anything, but so you could see how much there is to admire in you. I see a girl who works hard, who keeps trying, whose heart is softer than she sometimes lets on, and whose presence makes life feel warmer.</p>
-<p>I love that you have a mind of your own. I love that you can be stubborn, that you try to outsmart me, and that you look personally offended when I figure out exactly what you are thinking. And Musu, your “why do you hate me, magical?” has become one of those little things that can make me smile just by remembering it.</p>
-<p>But beyond all the teasing, I hope you know this: I am so proud of the person you are. I want you to have a life that feels big and beautiful to you. I want you to see Europe, wander through little streets, find cafés and bookstores, try food you cannot pronounce, and then come home to the taste of Kashmiri food that no place in the world can replace.</p>
-<p>I hope you keep finding songs that feel like they were written for you, books that stay in your heart, movies that make you laugh, and days that remind you how lovely it is to be alive. I hope this year gives you reasons to celebrate yourself—not just what you achieve, but who you are while getting there.</p>
-<p>You don't have to be cheerful every day, strong every minute, or easy to understand all the time. You can just be Musu. That is already someone worth loving, cheering for, and celebrating.</p>
-<p>Happy birthday, my love. May the world be gentle with your heart and generous with your dreams. And whenever you need someone in your corner, you know where to find me.</p>
-<div class="sign">With all my love,<br>Yugam ♡</div></div></section>
+<p>Sometimes I think about how funny it is that we lived so close to each other in Jammu and still had to meet at Dhruv. Less than a few minutes from each other's homes, and yet there we were, two people who had no idea that a coaching class, a few conversations, and those walks after physics would become such a big part of our lives. I still think of Rani Park, of all the talking, and of the ordinary days that never felt ordinary because you were there.</p>
+<p>I remember the little details: how I would walk home first and then go back for my scooter; how we could turn a short walk into a whole conversation; how you could be so sure you were being clever, and how quickly that confidence would disappear when I caught you. I hope you never lose that side of you—the expressive face, the stubborn little arguments, the way you get red and mad when I tease you. And your “why do you hate me?” Honestly, Musu, how could I ever explain how much I love that you are exactly this much you?</p>
+<p>What I admire most about you is not one grand thing. It is the person you are in all the small moments. You work hard even when things are not easy. You keep going. You care deeply. You have a kind, pure heart, even if you sometimes try to hide it behind that attitude of yours. I have seen you handle change, build a life in a new country, and keep showing up for the people and things that matter to you. I hope you give yourself even a little of the credit I give you.</p>
+<p>I think about the years when the world made even seeing each other difficult, and then the years when Canada was between us. The time difference, the late nights and early mornings, the calls that somehow became our everyday life—sometimes we would sit there talking for hours, eating together or watching something together, as if the distance could be persuaded to leave us alone for a while. And I remember Delhi in April, waiting to see you again after so long. The moment you were there, it felt less like starting over and more like coming back to something that had always been ours.</p>
+<p>But today, I don't want this letter to be only about our story. I want it to be about you. The girl who deserves to see the places she dreams about, especially Europe; to find the little streets, cafés, and bookstores she will want to remember; to eat her way through new places and still know that Kashmiri food will always taste like home. The girl who deserves beautiful music, books she cannot put down, movies that make her laugh, and as many cosy Gilmore Girls evenings as she wants.</p>
+<p>I hope this year brings you more than achievements and responsibilities. I hope it brings you moments when you feel proud of yourself for no particular reason. I hope you feel loved without having to ask, understood even when you cannot find the words, and free to be soft, silly, stubborn, ambitious, quiet, loud—every version of Musu.</p>
+<p>If I could wish one thing for you, it would be that you could see yourself the way I see you: not as someone who has to become more, do more, or prove more, but as someone already so deeply worth celebrating. I am proud of you, I believe in you, and I will always be in your corner—cheering for your dreams.</p>
+<p>Happy birthday, my love. I hope life is gentle with your heart and gives you room for every beautiful thing you want. Keep being my Musu. The world is lucky to have you, and I am luckier still.</p>
+<div class="sign">With all my love,<br>Jugu ♡</div></div></section>
 <section><div class="kicker">Little things I hope your year is full of</div><h2>Your kind of beautiful.</h2><p class="center">Not a list of things you should do. Just wishes for the things that make you light up.</p><div class="dreams">
 <div class="dream"><div class="emoji">🎧</div><div><h3>Perfect playlists</h3><p>Music for every mood, every drive, every version of you.</p></div></div>
 <div class="dream"><div class="emoji">📚</div><div><h3>One more chapter</h3><p>Stories that keep you up late and characters you miss when they're over.</p></div></div>
@@ -96,9 +120,40 @@ footer{text-align:center;color:#a88ba2;font-size:11px;padding:22px}
 <div class="dream"><div class="emoji">🍲</div><div><h3>A taste of home</h3><p>All the Kashmiri food your heart wants, whenever you want it.</p></div></div>
 <div class="dream"><div class="emoji">🍰</div><div><h3>Try the new thing</h3><p>New dishes, new places, and always room for one more bite.</p></div></div>
 </div></section>
-<section><div class="moment"><div class="kicker">One tiny reminder, just for you</div><div class="quote">“Why do you hate me, magical?”</div><p class="center">Musu, I could never hate you. I might call you out when you think you are hiding that little expression, and you might get all red and mad at me—but I hope you never stop being that wonderfully expressive, funny, impossible-to-fool person.</p><button class="btn" onclick="hearts()">Okay, fine. I am adorable. ♡</button></div></section>
 <section class="final"><div class="kicker">Today, the spotlight is yours</div><h2>Keep being Musu.</h2><p>Keep your kind heart. Keep your big dreams. Keep your opinions, your laughter, your clever little schemes, your love for stories and travel and food. Take up space. Be proud of yourself. Let yourself be celebrated.</p><p>There is nobody else quite like you, and that is your magic.</p><button class="btn" onclick="hearts()">A thousand birthday wishes for you ✨</button></section>
 <footer>Made for Musu, with love from Yugam. ♡</footer>
 <script>
 function hearts(){for(let i=0;i<36;i++){const e=document.createElement('span');e.className='float';e.textContent=['♡','✦','✿','♥'][i%4];e.style.left=Math.random()*100+'vw';e.style.color=['#f0a6b7','#e9c58c','#cbb6e5'][i%3];e.style.fontSize=(16+Math.random()*22)+'px';e.style.animationDelay=(Math.random()*.8)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),5000)}}
+const birthdayEmojis = [
+  '♡', '💗', '💖', '💝', '🎂',
+  '🎉', '🎈', '✨', '🥳', '🌸'
+];
+
+function birthdayFloat() {
+  const emoji = document.createElement('span');
+
+  emoji.className = 'birthday-float';
+  emoji.textContent =
+    birthdayEmojis[Math.floor(Math.random() * birthdayEmojis.length)];
+
+  emoji.style.left = Math.random() * 100 + 'vw';
+  emoji.style.fontSize = (18 + Math.random() * 24) + 'px';
+
+  emoji.style.setProperty(
+    '--duration',
+    (7 + Math.random() * 6) + 's'
+  );
+
+  emoji.style.setProperty(
+    '--drift',
+    (-70 + Math.random() * 140) + 'px'
+  );
+
+  document.body.appendChild(emoji);
+
+  setTimeout(() => emoji.remove(), 14000);
+}
+
+// One floating emoji every 650 milliseconds
+setInterval(birthdayFloat, 650);
 </script></body></html>
